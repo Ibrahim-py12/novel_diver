@@ -12,9 +12,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from modules.character import Character
-from modules.decision import StoryHistory
-from modules.story_engine import get_story_engine
+from .character import Character
+from .decision import StoryHistory
+from .story_engine import get_story_engine
 from config import validate_and_set_api_key, config
 from auth import auth
 import os
@@ -1012,4 +1012,5 @@ def main():
                 st.rerun()
 
 if __name__ == "__main__":
+
     main()
