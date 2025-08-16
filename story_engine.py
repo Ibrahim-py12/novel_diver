@@ -12,8 +12,8 @@ from typing import List, Tuple, Optional
 import requests
 from pathlib import Path
 
-from .character import Character
-from .decision import StoryHistory
+from character import Character
+from decision import StoryHistory
 from config import get_client, config
 
 
@@ -469,3 +469,4 @@ def get_story_engine() -> StoryEngine:
     """Get the global story engine instance."""
     story_engine = StoryEngine()
     return story_engine
+
